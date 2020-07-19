@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Passei no enem?</title>
+</head>
+<body>
+
+    <h1>Passei no Enem?</h1>
+    <div id="all-inputs">
+      <div id="inputs">
+      <p>Suas Notas:</p>
+
+          <input type="number" id="nota-linguagem" placeholder="Linguagens" max="1200" min="0" step="100"></input>
+          <input type="number" id="nota-matematica" placeholder="Matemática" max="1200" min="0" step="100"></input>
+          <input type="number" id="nota-ciencias" placeholder="Ciências da Natureza" max="1200" min="0" step="100"></input>
+          <input type="number" id="nota-humanas" placeholder="Ciências Humanas" max="1200" min="0" step="100"></input>
+          <input type="number" id="nota-redacao" placeholder="Redação" max="1200" min="0" step="100"></input>
+      </div>
+      <div id="inputs">
+      <p>Peso das Notas:</p>
+
+          <input type="number" id="peso-linguagem" placeholder="Linguagens" max="10" min="1"></input>
+          <input type="number" id="peso-matematica" placeholder="Matemática" max="10" min="1"></input>
+          <input type="number" id="peso-ciencias" placeholder="Ciências da Natureza" max="10" min="1"></input>
+          <input type="number" id="peso-humanas" placeholder="Ciências Humanas" max="10" min="1"></input>
+          <input type="number" id="peso-redacao" placeholder="Redação" max="10" min="1"></input>
+        </div>
+    </div>
+
+    <p>Nota de corte da Universidade:</p>
+      <input type="number" id="nota-corte" placeholder="Nota de Corte" min="0" max="1200" step="100"></input>
+      <button type="submmit" onclick="calcular()">Calcular</button>
+    <h2 id="resultado">Aprovado! Sua média foi de: </h2>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
